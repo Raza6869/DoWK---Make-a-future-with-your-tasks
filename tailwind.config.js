@@ -11,11 +11,12 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        'homebg': 'url("https://unsplash.com/pt-br/fotografias/bU6JyhSI6zo")'
+        'Home-bg': 'url("../Images/Home-bg.png")',
       },
       fontFamily: {
-        'Rubik': 'Rubik, sans-serif',
-      },
+        'delagothic': 'Dela Gothic One',
+        'adamcg': 'AdamCG'
+      }
     },
   },
   plugins: [],
