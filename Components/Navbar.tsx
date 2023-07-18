@@ -1,3 +1,5 @@
+import Link from "next/link"
+
 export default function Navbar(){
     return(
         <nav className='flex justify-between items-center p-5'>
@@ -10,10 +12,10 @@ export default function Navbar(){
                     <li>Docs</li>
                     <li>Manager</li>
                 </ul>
-                <ul className="flex gap-3 items-center">
-                    <li className="p-2 bg-green-400 text-white rounded">Sign in</li>
-                    <li className="text-green-400">Sign Up</li>
-                </ul>
+                <div className="flex gap-3 items-center">
+                    <Link href="/board" className="p-2 bg-green-400 text-white rounded">Sign in</Link>
+                    <button className="text-green-400">Sign Up</button>
+                </div>
             </div>
         </nav>
     )
