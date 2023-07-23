@@ -1,21 +1,14 @@
+import TimeBox from "@/Components/Board/TimeBox"
 import Sidebar from "@/Components/Sidebar/Sidebar";
+import Complement from "@/Components/Board/Complement"
 
 export default function Board(){
     return(
-        <main className="bg-gradient-to-br from-green-600 to-cyan-400 h-screen overflow-x-hidden flex">
+        <main className="bg-gradient-to-br from-green-600 to-cyan-400 h-screen overflow-hidden flex">
             <Sidebar/>
-            <div className="bg-white h-[99vh] mt-2 w-5/6 p-8 rounded-tl-[150px] overflow-hidden">
-                <div className="h-1/4 ">
-                    <ul className="flex justify-end gap-3 text-2xl">
-                        <li><i className="bi bi-bell-fill"></i></li>
-                        <li><i className="bi bi-question-circle"></i></li>
-                        <li><i className="bi bi-gear-fill"></i></li>
-                    </ul>
-                </div>
-                <div className="flex gap-4 items-baseline mb-20">
-                    <h1 className="font-bold text-green-500 text-3xl">Bom dia, Usuário!</h1>
-                    <input type="date" name="Date" id="Date" className=" bg-green-500 invert px-3 rounded-xl text-sm w-32"/> 
-                </div>
+            <div className="bg-white h-[99vh] mt-1 w-5/6 rounded-tl-[180px] overflow-x-hidden">
+                <TimeBox/>
+                <Complement/>
                 <div className="flex">
                     <div className="w-3/4 px-10">
                         <nav>
