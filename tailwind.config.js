@@ -14,7 +14,7 @@ module.exports = {
       },
       fontFamily: {
         'delagothic': 'Dela Gothic One',
-        'adamcg': 'AdamCG'
+        'adamcg': 'AdamCG',
       }
     },
   },
