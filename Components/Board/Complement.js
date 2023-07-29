@@ -7,9 +7,9 @@ export default function Complement(){
     function cumpriLogic(){
         if(hours < 12 ){
             return "Bom dia"
-        }else if(hours >= 12 ){
+        }else if(hours >= 12 && hours < 18 ){
             return "Boa tarde"
-        }else if(hours > 17 ){
+        }else if(hours >= 18 ){
             return "Boa noite"
         }
     };

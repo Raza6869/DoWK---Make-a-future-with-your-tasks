@@ -1,8 +1,10 @@
-export default function SideTools({text, icon}){
+import Link from "next/link";
+
+export default function SideTools({text, icon, href}){
     return(
-        <li className="flex gap-5 items-center">
+        <Link href= "/app/board/page.js" className="flex gap-5 items-center">
             <i className={icon}></i>
-            <p className="text-lg">{text}</p> 
-        </li>
+            <Link href={href} className="text-lg">{text}</Link> 
+        </Link>
     )
 }
